@@ -1,6 +1,6 @@
 ﻿
 public class FightingUnit : Unit
-{
+{ //
     public bool DEFingRetreat;
     public bool ATKingRetreat;
 
