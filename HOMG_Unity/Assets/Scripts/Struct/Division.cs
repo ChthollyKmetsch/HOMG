@@ -28,9 +28,11 @@ public class Division
         int def = 0;
         Cost _ATKCostcost = new Cost(0, 0);
 
-        foreach (FightingUnit unit in _units)
+        foreach (FightingUnit fightUnit in _units)
         {
-            _ATKCostcost += unit.unit.UnitData.ATKCost;
+            _ATKCostcost += fightUnit.getUnitData().GetATKCost();
+            atk += fightUnit.getUnitData().GetATK();
+            def += fightUnit.getUnitData().GetDEF();
         }
 
         ATK = atk;
