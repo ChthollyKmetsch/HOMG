@@ -1,6 +1,6 @@
 ﻿
 public class FightingUnit : Unit
-{ //
+{ // 修改继承
     public bool DEFingRetreat;
     public bool ATKingRetreat;
 
