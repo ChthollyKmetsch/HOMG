@@ -26,11 +26,11 @@ public class Division
     {
         int atk = 0;
         int def = 0;
-        Cost _ATKCostcost = new Cost(0, 0);
+        Cost _ATKCost = new Cost(0, 0);
 
-        foreach (FightingUnit fightUnit in _units)
+        foreach (FightingUnit fightUnit in _units) // 计算总攻击力、防御力和消耗
         {
-            _ATKCostcost += fightUnit.getUnitData().GetATKCost();
+            _ATKCost += fightUnit.getUnitData().GetATKCost();
             atk += fightUnit.getUnitData().GetATK();
             def += fightUnit.getUnitData().GetDEF();
         }
@@ -38,7 +38,7 @@ public class Division
         ATK = atk;
         DEF = def;
 
-        ATKCost = _ATKCostcost;
+        ATKCost = _ATKCost;
     }
 
     public List<FightingUnit> GetFightingUnits() => _units;
