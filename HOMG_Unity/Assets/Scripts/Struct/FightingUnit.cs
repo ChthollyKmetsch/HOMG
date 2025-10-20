@@ -1,13 +1,12 @@
 ﻿
-public class FightingUnit
+public class FightingUnit : Unit
 {
-    public Unit unit;
     public bool DEFingRetreat;
     public bool ATKingRetreat;
 
     public FightingUnit(Unit unit)
     {
-        this.unit = unit;
+		this = unit;
         DEFingRetreat = false;
         ATKingRetreat = false;
     }
